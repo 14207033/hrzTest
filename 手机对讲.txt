@@ -1,0 +1,26 @@
+
+启动主界面的三种方法
+
+第一种方法
+this.setContentView(R.layout.activity_main);
+
+第二种方法
+this.setContentView(this.getLayoutInflater().inflate(R.layout.activity_main,null));
+
+第三种方法
+this.getWindow().setContentView(this.getLayoutInflater().inflate(R.layout.activity_main,null));
+————————————————
+
+动态添加控件
+
+LinearLayout layout = (LinearLayout)findViewById(R.id.ldd);
+
+
+Button button = new Button(this);
+
+
+
+button.setText("ldd");
+
+layout.addView(button);
+————————————————
